@@ -2,12 +2,12 @@ package Alignment;
 
 use strict;
 use warnings;
-#BEGIN {$ENV{CLUSTALDIR} = '/Users/usuario/Documents/udg/investigacion/montoya/repository/papillomavirus/lib/aligners/clustalw' }
-BEGIN{ init }
+BEGIN{ 
+	BEGIN {use Cwd; my $document_root = getcwd; $document_root = "$document_root" . "/lib/aligners/clustalw"; $ENV{CLUSTALDIR} = $document_root }
+}
 use Exporter;
 use Data::Dumper;
 use Bio::Tools::Run::Alignment::Clustalw;
-use Cwd;
 
 
 our @ISA = qw(Exporter);
@@ -16,7 +16,6 @@ our @EXPORT = qw(similarityVectors);
 
 sub init{
 print "Hola";
-#BEGIN {my $document_root = getcwd; $document_root = "$document_root" . "/lib/aligners/clustalw"; $ENV{CLUSTALDIR} = $document_root }
 
 }
 
