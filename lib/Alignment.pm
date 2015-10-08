@@ -31,11 +31,8 @@ sub scoreAlignmentVectors{
 						Bio::PrimarySeq->new(-seq => $seq2, -id => "$sequence2" . "-" . "$orf")
 						);
 					push (@scoreAlignmentVector, $factory->align(\@sequences)->score());
-					
-					#push (@scoreAlignmentVector, $factory->align(\@sequences)->score());
-					#push (@scoreAlignmentVector, $factory->align(\@sequences)->score());
 				}
-				#$scoreAlignmentHash{$sequence1}{$sequence2} = \@scoreAlignmentVector;
+				$scoreAlignmentHash{$sequence1}{$sequence2} = \@scoreAlignmentVector;
 			}
 		}
 	}
