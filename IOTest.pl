@@ -6,15 +6,14 @@ use Bio::SeqIO;
 use Transformer;
 use Alignment;
 use Data::Dumper;
-use Cwd;
 
 
 my @orfs = ('E1','E2','L1','L2','N1');
 $seqio_obj = IOSequence::readSequence('data/sequence.gb');
 $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene');
-Alignment::similarityVectors($orfCount);
+$scoreAlignmentVector = Alignment::scoreAlignmentVectors($orfCount, 3, 'BLOSUM');
 #tagStatisticsReport($orfCount, \@orfs);
-#print Dumper($orfCount);
+print Dumper($scoreAlignmentVector);
 
 sub tagStatisticsReport(){
 	my ($tagCount, $tagsExpected) = @_ or die "Wrong parameters number in tagStatisticReport";
