@@ -32,6 +32,4 @@ sub SeqIOToHash{
 	return \%sequences;	
 }
 
-
-#print $tagToVerify, " ", $tagsValues[0], " ", ($tagToVerify eq $tagsValues[0]), "\n";
 1;
