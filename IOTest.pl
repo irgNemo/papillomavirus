@@ -4,16 +4,18 @@ use lib 'lib';
 use IOSequence;
 use Bio::SeqIO;
 use Transformer;
-use Alignment;
+#use Alignment;
 use Data::Dumper;
 
 
-my @orfs = ('E1','E2','L1','L2','N1');
-$seqio_obj = IOSequence::readSequence('data/sequence.gb');
+my @orfs = ('E1','E2','L1','L2','E6', 'E7');
+$seqio_obj = IOSequence::readSequence('data/todos.gb');
 $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene');
-$pairwiseAlignmentVector = Alignment::clustalwPairwiseAlignmentVectors($orfCount, 3, 'BLOSUM');
-#tagStatisticsReport($orfCount, \@orfs);
-print Dumper($scoreAlignmentVector);
+tagStatisticsReport($orfCount, \@orfs);
+
+#$pairwiseAlignmentVector = Alignment::clustalwPairwiseAlignmentVectors($orfCount, 3, 'BLOSUM');
+#$multipleAlignmentVector = Alignment::clustalwMultipleAlignmentPerORF($orfCount, 3, 'BLOSUM');
+#print Dumper($scoreAlignmentVector);
 
 sub tagStatisticsReport(){
 	my ($tagCount, $tagsExpected) = @_ or die "Wrong parameters number in tagStatisticReport";

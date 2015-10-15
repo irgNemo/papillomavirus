@@ -1,6 +1,6 @@
 package Alignment;
 
-BEGIN {use Cwd; my $document_root = getcwd . "/lib/aligners/clustalw/"; $ENV{CLUSTALDIR} = $document_root; }
+BEGIN {use Cwd; my $document_root = getcwd . "/lib/aligners/clustalw/"; $ENV{CLUSTALDIR} = $document_root; print $document_root . "\n"; }
 
 use strict;
 use warnings;
@@ -9,7 +9,7 @@ use Bio::Tools::Run::Alignment::Clustalw;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Alignment);
-our @EXPORT = qw(clustalwPairwiseAlignmentVectors);
+our @EXPORT = qw(clustalwPairwiseAlignmentVectors, clustalwMultipleAlignmentPerORF);
 
 sub clustalwPairwiseAlignmentVectors{
 	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::scoreAlignmentVectors";
