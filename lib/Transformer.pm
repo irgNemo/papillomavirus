@@ -27,7 +27,7 @@ sub SeqIOToHash{
 				}
 			}	
 		}
-		$sequences{$seq->display_name} = \%tagsFound;
+		$sequences{$seq->accession_number} = \%tagsFound;
 	}
 	return \%sequences;	
 }
