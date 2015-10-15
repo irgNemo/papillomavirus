@@ -11,7 +11,7 @@ use Data::Dumper;
 my @orfs = ('E1','E2','L1','L2','N1');
 $seqio_obj = IOSequence::readSequence('data/sequence.gb');
 $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene');
-$scoreAlignmentVector = Alignment::scoreAlignmentVectors($orfCount, 3, 'BLOSUM');
+$pairwiseAlignmentVector = Alignment::clustalwPairwiseAlignmentVectors($orfCount, 3, 'BLOSUM');
 #tagStatisticsReport($orfCount, \@orfs);
 print Dumper($scoreAlignmentVector);
 

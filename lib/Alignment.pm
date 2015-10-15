@@ -9,9 +9,9 @@ use Bio::Tools::Run::Alignment::Clustalw;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Alignment);
-our @EXPORT = qw(scoreAlignmentVectors);
+our @EXPORT = qw(clustalwPairwiseAlignmentVectors);
 
-sub scoreAlignmentVectors{
+sub clustalwPairwiseAlignmentVectors{
 	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::scoreAlignmentVectors";
 	my %scoreAlignmentHash;
 	my $factory = Bio::Tools::Run::Alignment::Clustalw->new(-matrix => $matrix, -ktuple => $ktuple);
@@ -31,6 +31,27 @@ sub scoreAlignmentVectors{
 				}
 				$scoreAlignmentHash{$sequence1}{$sequence2} = \@scoreAlignmentVector;
 			}
+		}
+	}
+	
+	# Elimina el par key/value que este vacio
+	foreach my $sequence1 (keys(%scoreAlignmentHash)){
+		if ((scalar keys $scoreAlignmentHash{$sequence1}) == 0){
+			delete $scoreAlignmentHash{$sequence1};
+		}	
+	}
+
+	return \%scoreAlignmentHash;
+}
+
+sub clustalwMultipleAlignmentPerORF{
+	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::multipleAlignmentPerORF";
+	my $factory = Bio::Tools::Run::Alignment::Clustalw->new(-matrix => $matrix, -ktuple => $ktuple);
+	my %sequences;
+	foreach my $sequence1 (keys $sequencesHash){
+		foreach my $orf (keys $sequencesHash->{$sequence1}){
+			my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'sequence'}[0];
+			$sequences{$orf} = ($sequences{$orf}) ? push ($sequences{$orf}, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf) : ();
 		}
 	}
 	
