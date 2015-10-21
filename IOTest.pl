@@ -4,18 +4,29 @@ use lib 'lib';
 use IOSequence;
 use Bio::SeqIO;
 use Transformer;
-#use Alignment;
+use Alignment;
 use Data::Dumper;
+use Bio::TreeIO;
+#use Bio::Tree::Draw::Cladogram;
 
 
-my @orfs = ('E1','E2','L1','L2','E6', 'E7');
-$seqio_obj = IOSequence::readSequence('data/todos.gb');
-$orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene');
-tagStatisticsReport($orfCount, \@orfs);
+my @orfs = ('E1','E2');#,'L1','L2','E6', 'E7');
+my $seqio_obj = IOSequence::readSequence('data/sequence.gb');
+my $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene');
+my $sequencesPerORF = Alignment::organizeSequencesPerORF($orfCount);
+my $alignmentsAndTrees = Alignment::clustalwAlignmentAndTree($sequencesPerORF, 3, 'BLOSUM');
+my $outputTree = new Bio::TreeIO(-file => '>myTree.svg', -format => 'svggraph');
 
+foreach my $orf (keys $alignmentsAndTrees){
+	while(my $tree = $alignmentsAndTrees->{$orf}{'tree'}->next_tree){
+		$outputTree->write_tree($tree);
+	}	 
+}
+
+#print Dumper($alignmentsAndTrees);
+#tagStatisticsReport($orfCount, \@orfs);
 #$pairwiseAlignmentVector = Alignment::clustalwPairwiseAlignmentVectors($orfCount, 3, 'BLOSUM');
-#$multipleAlignmentVector = Alignment::clustalwMultipleAlignmentPerORF($orfCount, 3, 'BLOSUM');
-#print Dumper($scoreAlignmentVector);
+#$multipleAlignment = Alignment::clustalwMultipleAlignment($sequencesPerORF, 3, 'BLOSUM');
 
 sub tagStatisticsReport(){
 	my ($tagCount, $tagsExpected) = @_ or die "Wrong parameters number in tagStatisticReport";
