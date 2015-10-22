@@ -1,0 +1,400 @@
+
+
+
+ CLUSTAL 2.0.4 Multiple Sequence Alignments
+
+
+Sequence format is Pearson
+Sequence 1: EF362754-E2  1176 bp
+Sequence 2: EF362755-E2  1176 bp
+Sequence 3: EF117890-E2  1176 bp
+Sequence 4: EF117891-E2  1176 bp
+Start of Pairwise alignments
+Aligning...
+
+Sequences (1:2) Aligned. Score:  99
+Sequences (1:3) Aligned. Score:  99
+Sequences (1:4) Aligned. Score:  100
+Sequences (2:3) Aligned. Score:  99
+Sequences (2:4) Aligned. Score:  99
+Sequences (3:4) Aligned. Score:  99
+Guide tree file created:   [/tmp/Rii46lX6af/76e3ZWx517.dnd]
+
+There are 3 groups
+Start of Multiple Alignment
+
+Aligning...
+Group 1: Sequences:   2      Score:22344
+Group 2: Sequences:   2      Score:22325
+Group 3: Sequences:   4      Score:22258
+Alignment Score 50859
+
+GCG-Alignment file created      [/tmp/Rii46lX6af/FZi66SmLTy]
+
+
+
+ CLUSTAL 2.0.4 Multiple Sequence Alignments
+
+
+Sequence format is Pearson
+Sequence 1: EF362754-E1  1932 bp
+Sequence 2: EF362755-E1  1932 bp
+Sequence 3: EF117890-E1  1932 bp
+Sequence 4: EF117891-E1  1932 bp
+Start of Pairwise alignments
+Aligning...
+
+Sequences (1:2) Aligned. Score:  99
+Sequences (1:3) Aligned. Score:  99
+Sequences (1:4) Aligned. Score:  100
+Sequences (2:3) Aligned. Score:  100
+Sequences (2:4) Aligned. Score:  99
+Sequences (3:4) Aligned. Score:  99
+Guide tree file created:   [/tmp/Rii46lX6af/LCMJqvu4FI.dnd]
+
+There are 3 groups
+Start of Multiple Alignment
+
+Aligning...
+Group 1: Sequences:   2      Score:36708
+Group 2: Sequences:   2      Score:36708
+Group 3: Sequences:   4      Score:36632
+Alignment Score 80372
+
+GCG-Alignment file created      [/tmp/Rii46lX6af/FZi66SmLTy]
+$VAR1 = {
+          'E2' => {
+                    'tree' => bless( {
+                                       '_root_cleanup_methods' => [
+                                                                    sub { "DUMMY" }
+                                                                  ],
+                                       'nodelete' => 0,
+                                       '_rootnode' => bless( {
+                                                               '_adding_descendent' => 0,
+                                                               '_root_cleanup_methods' => [
+                                                                                            sub { "DUMMY" }
+                                                                                          ],
+                                                               '_creation_id' => 66,
+                                                               '_root_verbose' => 0,
+                                                               '_desc' => {
+                                                                            '64' => bless( {
+                                                                                             '_ancestor' => $VAR1->{'E2'}{'tree'}{'_rootnode'},
+                                                                                             '_desc' => {
+                                                                                                          '63' => bless( {
+                                                                                                                           '_ancestor' => $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_desc'}{'64'},
+                                                                                                                           '_id' => 'EF117890-E2',
+                                                                                                                           '_desc' => {},
+                                                                                                                           '_root_cleanup_methods' => [
+                                                                                                                                                        $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                                                      ],
+                                                                                                                           '_branch_length' => '0.00085',
+                                                                                                                           '_creation_id' => 63,
+                                                                                                                           '_root_verbose' => 0,
+                                                                                                                           '_height' => undef
+                                                                                                                         }, 'Bio::Tree::Node' ),
+                                                                                                          '62' => bless( {
+                                                                                                                           '_ancestor' => $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_desc'}{'64'},
+                                                                                                                           '_id' => 'EF362755-E2',
+                                                                                                                           '_desc' => {},
+                                                                                                                           '_root_cleanup_methods' => [
+                                                                                                                                                        $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                                                      ],
+                                                                                                                           '_branch_length' => '0.00085',
+                                                                                                                           '_creation_id' => 62,
+                                                                                                                           '_root_verbose' => 0,
+                                                                                                                           '_height' => undef
+                                                                                                                         }, 'Bio::Tree::Node' )
+                                                                                                        },
+                                                                                             '_root_cleanup_methods' => [
+                                                                                                                          $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                        ],
+                                                                                             '_adding_descendent' => 0,
+                                                                                             '_branch_length' => '0.00510',
+                                                                                             '_creation_id' => 64,
+                                                                                             '_root_verbose' => 0,
+                                                                                             '_height' => undef
+                                                                                           }, 'Bio::Tree::Node' ),
+                                                                            '61' => bless( {
+                                                                                             '_ancestor' => $VAR1->{'E2'}{'tree'}{'_rootnode'},
+                                                                                             '_id' => 'EF362754-E2',
+                                                                                             '_desc' => {},
+                                                                                             '_root_cleanup_methods' => [
+                                                                                                                          $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                        ],
+                                                                                             '_branch_length' => '0.00000',
+                                                                                             '_creation_id' => 61,
+                                                                                             '_root_verbose' => 0,
+                                                                                             '_height' => undef
+                                                                                           }, 'Bio::Tree::Node' ),
+                                                                            '65' => bless( {
+                                                                                             '_ancestor' => $VAR1->{'E2'}{'tree'}{'_rootnode'},
+                                                                                             '_id' => 'EF117891-E2',
+                                                                                             '_desc' => {},
+                                                                                             '_root_cleanup_methods' => [
+                                                                                                                          $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                        ],
+                                                                                             '_branch_length' => '0.00000',
+                                                                                             '_creation_id' => 65,
+                                                                                             '_root_verbose' => 0,
+                                                                                             '_height' => undef
+                                                                                           }, 'Bio::Tree::Node' )
+                                                                          },
+                                                               '_height' => undef
+                                                             }, 'Bio::Tree::Node' ),
+                                       '_maxbranchlen' => 0,
+                                       '_root_verbose' => 0
+                                     }, 'Bio::Tree::Tree' ),
+                    'alignment' => bless( {
+                                            '_order' => {
+                                                          '1' => 'EF117891-E2/1-1176',
+                                                          '3' => 'EF117890-E2/1-1176',
+                                                          '0' => 'EF362754-E2/1-1176',
+                                                          '2' => 'EF362755-E2/1-1176'
+                                                        },
+                                            '_id' => 'NoName',
+                                            'score' => '50859',
+                                            '_source' => 'gcg',
+                                            '_start_end_lists' => {
+                                                                    'EF117890-E2' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF117890-E2',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1176,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1176,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGAAAAGGATAGCAACAAACTTGAGGATCAGATTAAGCATTGGGCGCAGGTCCGGCTAGAAAATGTCATGCTGTTTAAGGCCCGAGAATGTGGAATGACACGAGTCGGCTGTACAGCTGTGCCTGCCCTCACCGTGTCAAAAGCTAAGGCATGTCAGGCCATAGAGGTACAGCTGGCATTACAGACATTGATGCAGAGTGCCTATAGCACGGAGGCATGGACCCTACGAGACACGTGTCTGGAGATGTGGGACGCACCTCCAAAGAAATGCTGGAAAAAAAAAGGACAATCAGTATTAGTGAAATTTGATGGCAGCAGTGACAGAGACATGATATATACAAGCTGGGGATTCATTTATGTGCAGGACACTATCGCTGATTCCTGGCATAAGGTGCCAGGGCAGGTGGACGAACTGGGATTATATTATGTGCACGATGGTGTACGTGTTAACTATGTGGACTTTGGAACAGAGTCCTTGACCTATGGGGTCACCGGGACGTGGGAGGTGCACGTGGCTGGGACTGTTATTCACCATACATCCGCATCTGTGTCTAGCACCCAGGCCAGCGCCTCGGACGACGAACCACTATCCCCTATTAGAACTGCTGTATCCCCAGTCCCAGCCCCAGTCGCAGCCTCAGCAGAACCAACAGGAGCAGGAAGAGCAGCTCCGCCCACCCAAGCGTTGTGCTCCGCCCAGGCGCCAACGAGTCCGCCGGCCAAGCGCCAGCGGGTCATCGTCGGACAGCAGCATCCCCGGCCCGACTCTACGCGAACGGTCGGAGAGGGGGAAGTGGAGTGTCACAACAAGCGGAGCATCCGTGACTCTAACCGCACAGACCCCAGGTGGGGCCACGGTGACACTGACTCTGTGCCTGTAATCCACCTGAGAGGTGATGCAAATTGTTTAAAGTGCTTCAGATACAGGGTGCAAAAACATAAAGACGTACTGTATGCCAGGGTGTCCTCCACGTGGCACTGGGCGGGTGGGAACGGTGATAAGACAGCCTTTGTAACACTGTGGTACACCAGCGTTGAACAGCGTACAGAGTTCTTGACAAGAGTCAGTATACCTAAGGGATTGATAGCATTGCCAGGGTATATGTCTGCATTTGTATAA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ],
+                                                                    'EF117891-E2' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF117891-E2',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1176,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1176,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGAAAAGGATAGCAACAAACTTGAGGATCAGATTAAGCATTGGGCGCAGGTCCGGCTAGAAAATGTCATGCTGTTTAAGGCCCGAGAATGTGGAATGACACGAGTCGGCTGTACAGCTGTGCCTGCCCTCACCGTGTCAAAAGCTAAGGCATGTCAGGCCATAGAGGTACAGCTGGCATTACAGACATTGATGCAGAGTGCCTATAGCACGGAGGCATGGACCCTACGAGACACGTGTCTGGAGATGTGGGACGCACCTCCAAAGAAATGCTGGAAAAAAAAAGGACAATCAGTATTAGTGAAATTTGATGGCAGCAGTGACAGAGACATGATATATACAAGCTGGGGATTCATTTATGTGCAGGACACTATCACTGATTCCTGGCATAAGGTGCCAGGGCAGGTGGACGAACTGGGATTATATTATGTGCACGATGGTGTACGTGTTAACTATGTGGACTTTGGAACAGAGTCCTTGACCTATGGGGTCACCGGGACGTGGGAGGTGCACGTGGCTGGGACTGTTATTCACCATACATCCGCATCTGTGTCTAGCACCCAGGCCAGCGCCTCGGACGACGAACCACTATCCCCTATTAGAACTGCTGTATCCCCAGTCCCAGCCCCAGTCGCAGCCTCAGCAGAATCAACAGGAGCAGGAAGAGCAGCTCCGCCCACCCAAGCGTTGTGCTCCGCCCAGGCGCCAACGAGTCCGCCGGCCAAGCGCCAGCGTGTCATCGTCGGACAGCAGCATCCCCGGCCCGACTCTACGCGAACGGTCGGAGAGGGGGAAGTGGAGTGTTACAACAAGCGGAGCATCAGTGACTCTAACCGCACAGACCCCAGGTGGGGCCACGGTGACACTGACTCTGTGCCTGTAATCCACCTGAGAGGTGATGCAAATTGTTTAAAGTGCTTCAGATACAGGGTGCAAAAACATAAAGACGTACTGTATGCCAGGGTGTCCTCCACGTGGCACTGGGCGGGTGGGAACGGTGATAAGACAGCCTTTGTAACATTGTGGTACACCAGCGTTGAACAGCGTACAGAGTTCCTGACAAGAGTCAGTATACCTAAGGGATTGATAGCATTGCCAGGGTATATGTCTGCATTTGTATAA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ],
+                                                                    'EF362754-E2' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF362754-E2',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1176,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1176,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGAAAAGGATAGCAACAAACTTGAGGATCAGATTAAGCATTGGGCGCAGGTCCGGCTAGAAAATGTCATGCTGTTTAAGGCCCGAGAATGTGGAATGACACGAGTCGGCTGTACAGCTGTGCCTGCCCTCACCGTGTCAAAAGCTAAGGCATGTCAGGCCATAGAGGTACAGCTGGCATTACAGACATTGATGCAGAGTGCCTATAGCACGGAGGCATGGACCCTACGAGACACGTGTCTGGAGATGTGGGACGCACCTCCAAAGAAATGCTGGAAAAAAAAAGGACAATCAGTATTAGTGAAATTTGATGGCAGCAGTGACAGAGACATGATATATACAAGCTGGGGATTCATTTATGTGCAGGACACTATCACTGATTCCTGGCATAAGGTGCCAGGGCAGGTGGACGAACTGGGATTATATTATGTGCACGATGGTGTACGTGTTAACTATGTGGACTTTGGAACAGAGTCCTTGACCTATGGGGTCACCGGGACGTGGGAGGTGCACGTGGCTGGGACTGTTATTCACCATACATCCGCATCTGTGTCTAGCACCCAGGCCAGCGCCTCGGACGACGAACCACTATCCCCTATTAGAACTGCTGTATCCCCAGTCCCAGCCCCAGTCGCAGCCTCAGCAGAATCAACAGGAGCAGGAAGAGCAGCTCCGCCCACCCAAGCGTTGTGCTCCGCCCAGGCGCCAACGAGTCCGCCGGCCAAGCGCCAGCGTGTCATCGTCGGACAGCAGCATCCCCGGCCCGACTCTACGCGAACGGTCGGAGAGGGGGAAGTGGAGTGTTACAACAAGCGGAGCATCAGTGACTCTAACCGCACAGACCCCAGGTGGGGCCACGGTGACACTGACTCTGTGCCTGTAATCCACCTGAGAGGTGATGCAAATTGTTTAAAGTGCTTCAGATACAGGGTGCAAAAACATAAAGACGTACTGTATGCCAGGGTGTCCTCCACGTGGCACTGGGCGGGTGGGAACGGTGATAAGACAGCCTTTGTAACATTGTGGTACACCAGCGTTGAACAGCGTACAGAGTTCCTGACAAGAGTCAGTATACCTAAGGGATTGATAGCATTGCCAGGGTATATGTCTGCATTTGTATAA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ],
+                                                                    'EF362755-E2' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF362755-E2',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1176,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1176,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGAAAAGGATAGCAACAAACTTGAGGATCAGATTAAGCATTGGGCGCAGGTCCGGCTAGAAAATGTCATGCTGTTTAAGGCCCGAGAATGTGGAATGACACGAGTCGGCTGTACAGCTGTGCCTGCCCTCACCGTGTCAAAAGCTAAGGCATGTCAGGCCATAGAGGTACAGCTGGCATTACAGACATTGATGCAGAGTGCCTATAGCACGGAGGCATGGACCCTACGAGACACGTGTCTGGAGATGTGGGACGCACCTCCAAAGAAATGCTGGAAAAAGAAAGGACAATCAGTATTAGTGAAATTTGATGGCAGCAGTGACAGAGACATGATATATACAAGCTGGGGATTCATTTATGTGCAGGACACTATCACTGATTCCTGGCATAAGGTGCCAGGGCAGGTGGACGAACTGGGATTATATTATGTGCACGATGGTGTACGTGTTAACTATGTGGACTTTGGAACAGAGTCCTTGACCTATGGGGTCACCGGGACGTGGGAGGTGCACGTGGCTGGGACTGTTATTCACCATACATCCGCATCTGTGTCTAGCACCCAGGCCAGCGCCTCGGACGACGAACCACTATCCCCTATTAGAACTGCTGTATCCCCAGTCCCAGCCCCAGTCGCAGCCTCAGCAGAACCAACAGGAGCAGGAAGAGCAGCTCCGCCCACCCAAGCGTTGTGCTCCGCCCAGGCGCCAACGAGTCCGCCGGCCAAGCGCCAGCGGGTCATCGTCGGACAGCAGCATCCCCGGCCCGACTCTACGCGAACGGTCGGAGAGGGGGAAGTGGAGTGTCACAACAAGCGGAGCATCCGTGACTCTAACCGCACAGACCCCAGGTGGGGCCACGGTGACACTGACTCTGTGCCTGTAATCCACCTGAGAGGTGATGCAAATTGTTTAAAGTGCTTCAGATACAGGGTGCAAAAACATAAAGACGTACTGTATGCCAGGGTGTCCTCCACGTGGCACTGGGCGGGTGGGAACGGTGATAAGACAGCCTTTGTAACACTGTGGTACACCAGCGTTGAACAGCGTACAGAGTTCTTGACAAGAGTCAGTATACCTAAGGGATTGATAGCATTGCCAGGGTATATGTCTGCATTTGTATAA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ]
+                                                                  },
+                                            '_dis_name' => {},
+                                            '_seq' => {
+                                                        'EF362754-E2/1-1176' => $VAR1->{'E2'}{'alignment'}{'_start_end_lists'}{'EF362754-E2'}[0],
+                                                        'EF117890-E2/1-1176' => $VAR1->{'E2'}{'alignment'}{'_start_end_lists'}{'EF117890-E2'}[0],
+                                                        'EF117891-E2/1-1176' => $VAR1->{'E2'}{'alignment'}{'_start_end_lists'}{'EF117891-E2'}[0],
+                                                        'EF362755-E2/1-1176' => $VAR1->{'E2'}{'alignment'}{'_start_end_lists'}{'EF362755-E2'}[0]
+                                                      },
+                                            '_root_verbose' => 0
+                                          }, 'Bio::SimpleAlign' )
+                  },
+          'E1' => {
+                    'tree' => bless( {
+                                       '_root_cleanup_methods' => [
+                                                                    $VAR1->{'E2'}{'tree'}{'_root_cleanup_methods'}[0]
+                                                                  ],
+                                       'nodelete' => 0,
+                                       '_rootnode' => bless( {
+                                                               '_adding_descendent' => 0,
+                                                               '_root_cleanup_methods' => [
+                                                                                            $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                          ],
+                                                               '_creation_id' => 72,
+                                                               '_root_verbose' => 0,
+                                                               '_desc' => {
+                                                                            '67' => bless( {
+                                                                                             '_ancestor' => $VAR1->{'E1'}{'tree'}{'_rootnode'},
+                                                                                             '_id' => 'EF362754-E1',
+                                                                                             '_desc' => {},
+                                                                                             '_root_cleanup_methods' => [
+                                                                                                                          $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                        ],
+                                                                                             '_branch_length' => '0.00000',
+                                                                                             '_creation_id' => 67,
+                                                                                             '_root_verbose' => 0,
+                                                                                             '_height' => undef
+                                                                                           }, 'Bio::Tree::Node' ),
+                                                                            '71' => bless( {
+                                                                                             '_ancestor' => $VAR1->{'E1'}{'tree'}{'_rootnode'},
+                                                                                             '_id' => 'EF117891-E1',
+                                                                                             '_desc' => {},
+                                                                                             '_root_cleanup_methods' => [
+                                                                                                                          $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                        ],
+                                                                                             '_branch_length' => '0.00000',
+                                                                                             '_creation_id' => 71,
+                                                                                             '_root_verbose' => 0,
+                                                                                             '_height' => undef
+                                                                                           }, 'Bio::Tree::Node' ),
+                                                                            '70' => bless( {
+                                                                                             '_ancestor' => $VAR1->{'E1'}{'tree'}{'_rootnode'},
+                                                                                             '_desc' => {
+                                                                                                          '69' => bless( {
+                                                                                                                           '_ancestor' => $VAR1->{'E1'}{'tree'}{'_rootnode'}{'_desc'}{'70'},
+                                                                                                                           '_id' => 'EF117890-E1',
+                                                                                                                           '_desc' => {},
+                                                                                                                           '_root_cleanup_methods' => [
+                                                                                                                                                        $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                                                      ],
+                                                                                                                           '_branch_length' => '0.00000',
+                                                                                                                           '_creation_id' => 69,
+                                                                                                                           '_root_verbose' => 0,
+                                                                                                                           '_height' => undef
+                                                                                                                         }, 'Bio::Tree::Node' ),
+                                                                                                          '68' => bless( {
+                                                                                                                           '_ancestor' => $VAR1->{'E1'}{'tree'}{'_rootnode'}{'_desc'}{'70'},
+                                                                                                                           '_id' => 'EF362755-E1',
+                                                                                                                           '_desc' => {},
+                                                                                                                           '_root_cleanup_methods' => [
+                                                                                                                                                        $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                                                      ],
+                                                                                                                           '_branch_length' => '0.00000',
+                                                                                                                           '_creation_id' => 68,
+                                                                                                                           '_root_verbose' => 0,
+                                                                                                                           '_height' => undef
+                                                                                                                         }, 'Bio::Tree::Node' )
+                                                                                                        },
+                                                                                             '_root_cleanup_methods' => [
+                                                                                                                          $VAR1->{'E2'}{'tree'}{'_rootnode'}{'_root_cleanup_methods'}[0]
+                                                                                                                        ],
+                                                                                             '_adding_descendent' => 0,
+                                                                                             '_branch_length' => '0.00311',
+                                                                                             '_creation_id' => 70,
+                                                                                             '_root_verbose' => 0,
+                                                                                             '_height' => undef
+                                                                                           }, 'Bio::Tree::Node' )
+                                                                          },
+                                                               '_height' => undef
+                                                             }, 'Bio::Tree::Node' ),
+                                       '_maxbranchlen' => 0,
+                                       '_root_verbose' => 0
+                                     }, 'Bio::Tree::Tree' ),
+                    'alignment' => bless( {
+                                            '_order' => {
+                                                          '1' => 'EF117891-E1/1-1932',
+                                                          '3' => 'EF117890-E1/1-1932',
+                                                          '0' => 'EF362754-E1/1-1932',
+                                                          '2' => 'EF362755-E1/1-1932'
+                                                        },
+                                            '_id' => 'NoName',
+                                            'score' => '80372',
+                                            '_source' => 'gcg',
+                                            '_start_end_lists' => {
+                                                                    'EF362755-E1' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF362755-E1',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1932,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1932,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAGGATTCCGAAGGTACCGACGGGACCGAGGAGGACGGGTGCCGGGCAGGGGGGTGGTTTCATGTGGAGGCCATTATAACACACGGCCAGAGGCAGGTATCCAGTGACGAGGACGAGGACGAAACAGAGACAGGGGAGGATTTAGACTTTATAGACAATAGGGCTCCCGGAGATGGGCAGGAAATTCCCTTGCAGCTATATGCACAACAAACCGCTCAGGATGACGAAGCAACAGTGCAGGCCCTAAAACGAAAGTTTGTGGCCAGTCCTTTGTCTGCATGCTCATGCATAGAGAATGATTTAAGTCCCAGATTAGATGCAATCTCCCTAAACAGAAAGTCAGAAAAGGCGAAGAGGCGCTTATTCGAGACAGAACCACCAGACAGTGGGTATGGCAATACGCAGATGGTTGTTGGAACGCCAGAGGAGGTAACGGGGGATGAGGAAAGCCAAGGGGGGCGGCCGGTGGAGGATCAGGAGGAGGAGCGTCAAGGGGGAGACGGAGAGGCAGATCTAACTGTACACACTCCACAGTCAGGAACAGATGCGACGGGTAGCGTGCTGAACTTACTAAGAAGTAGCAATCTGAAGGCGACGTTGCTGAGTAAGTTTAAGGACCTGTTTGGGGTGGGATTCTATGAACTGGTCAGACAGTTCAAAAGCAGCAAGACAGCATGTGCAGACTGGGTCGTCTGCGCCTATGGTGTGTATTATGCTGTAGCGGAGGGTCTAAAGAAATTAATACAGCCACATACACAATATGCACATATACAGGTACAGACCAGCTCGTGGGGCATGGTGGTCTTTATGCTGCTGCGATACAACTGTGCAAAAAACAGGGACTCAGTGTCCAAGAACATGAGCATGCTGCTAAACATTCCCGAAAAGCATATGCTCATAGAACCACCAAAACTGAGAAGTACCCCTGCCGCCTTATACTGGTACAAGACGGCCATGGGCAACGGAAGTGAGGTATATGGGGAAACACCAGAATGGATTGTCAGACAGACGTTGGTAGGACATAGCATGGAAGACGAACAGTTCAGACTGTCAGTTATGGTACAGTATGCATATGACCATGACATTGTAGAGGAAAGTGTGCTTGCATTTGAGTATGCACAGCTAGCAGATGTGGATGCCAATGCAGCAGCATTTCTAAACAGCAACTGTCAGGCCAAGTACGTGAAGGACGCAGTGACAATGTGCAGGCACTATAAGCGTGCAGAGAGAGAACAGATGAGTATGTCACAGTGGATAACATTCAGAGGAAATAAGGTATCAGAGGAAGGGGACTGGAAGCCCATAGTCAGGTTTCTAAGACATCAAGGGGTAGAGTTTGTGTCGTTCCTAGCTGCCTTTAAATTGTTCCTAAAAGGCGTGCCAAAGAAAAATTGTATAGTGTTCTATGGACCTGCAGACACAGGCAAATCATATTTTTGCATGAGCTTGTTGCAGTTCCTAGGCGGCGCTGTTATCTCATATGCTAATTCTAGCAGCCATTTTTGGCTTCAGCCTTTATCAGATAGTAAGATAGGGTTACTGGACGACGCAACACCCCAGTGTTGGAGTTACATAGATATATATTTAAGAAATCTTTTGGATGGACACCCAGTGAGCATAGACAGAAAGCACAAAACTTTGCTGCAGCTTAAGTGTCCACCCCTAATGATAACAACCAACACCAATCCTCTAGAGGAGGACAGATGGAAATATTTGCGCAGCAGGCTGACAGTGTTTACATTTAAGAATCCATTTCCTTTTGCAAGTCCGGGAGAGCCCCTGTACCCGATAAATAATGCAAACTGGAAATGCTTTTTCCAAAGGTCGTGGTCCCGCTTAGACCTAAACAGTCCAGAGGAGCAGGACGACAATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ],
+                                                                    'EF117890-E1' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF117890-E1',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1932,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1932,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAGGATTCCGAAGGTACCGACGGGACCGAGGAGGACGGGTGCCGGGCAGGGGGGTGGTTTCATGTGGAGGCCATTATAACACACGGCCAGAGGCAGGTATCCAGTGACGAGGACGAGGACGAAACAGAGACAGGGGAGGATTTAGACTTTATAGACAATAGGGCTCCCGGAGATGGGCAGGAAATTCCCTTGCAGCTATATGCACAACAAACCGCTCAGGATGACGAAGCAACAGTGCAGGCCCTAAAACGAAAGTTTGTGGCCAGTCCTTTGTCTGCATGCTCATGCATAGAGAATGATTTAAGTCCCAGATTAGATGCAATCTCCCTAAACAGAAAGTCAGAAAAGGCGAAGAGGCGCTTATTCGAGACAGAACCACCAGACAGTGGGTATGGCAATACGCAGATGGTTGTTGGAACGCCAGAGGAGGTAACGGGGGATGAGGAAAGCCAAGGGGGGCGGCCGGTGGAGGATCAGGAGGAGGAGCGTCAAGGGGGAGACGGAGAGGCAGATCTAACTGTACACACTCCACAGTCAGGAACAGATGCGACGGGTAGCGTGCTGAACTTACTAAGAAGTAGCAATCTGAAGGCGACGTTGCTGAGTAAGTTTAAGGACCTGTTTGGGGTGGGATTCTATGAACTGGTCAGACAGTTCAAAAGCAGCAAGACAGCATGTGCAGACTGGGTCGTCTGCGCCTATGGTGTGTATTATGCTGTAGCGGAGGGTCTAAAGAAATTAATACAGCCACATACACAATATGCACATATACAGGTACAGACCAGCTCGTGGGGCATGGTGGTCTTTATGCTGCTGCGATACAACTGTGCAAAAAACAGGGACTCAGTGTCCAAGAACATGAGCATGCTGCTAAACATTCCCGAAAAGCATATGCTCATAGAACCACCAAAACTGAGAAGTACCCCTGCCGCCTTATACTGGTACAAGACGGCCATGGGCAACGGAAGTGAGGTATATGGGGAAACACCAGAATGGATTGTCAGACAGACGTTGGTAGGACATAGCATGGAAGACGAACAGTTCAGACTGTCAGTTATGGTACAGTATGCATATGACCATGACATTGTAGAGGAAAGTGTGCTTGCATTTGAGTATGCACAGCTAGCAGATGTGGATGCCAATGCAGCAGCATTTCTAAACAGCAACTGTCAGGCCAAGTACGTGAAGGACGCAGTGACAATGTGCAGGCACTATAAGCGTGCAGAGAGAGAACAGATGAGTATGTCACAGTGGATAACATTCAGAGGAAATAAGGTATCAGAGGAAGGGGACTGGAAGCCCATAGTCAGGTTTCTAAGACATCAAGGGGTAGAGTTTGTGTCGTTCCTAGCTGCCTTTAAATTGTTCCTAAAAGGCGTGCCAAAGAAAAATTGTATAGTGTTCTATGGACCTGCAGACACAGGCAAATCATATTTTTGCATGAGCTTGTTGCAGTTCCTAGGCGGCGCTGTTATCTCATATGCTAATTCTAGCAGCCATTTTTGGCTTCAGCCTTTATCAGATAGTAAGATAGGGTTACTGGACGACGCAACACCCCAGTGTTGGAGTTACATAGATATATATTTAAGAAATCTTTTGGATGGACACCCAGTGAGCATAGACAGAAAGCACAAAACTTTGCTGCAGCTTAAGTGTCCACCCCTAATGATAACAACCAACACCAATCCTCTAGAGGAGGACAGATGGAAATATTTGCGCAGCAGGCTGACAGTGTTTACATTTAAGAATCCATTTCCTTTTGCAAGTCCGGGAGAGCCCCTGTACCCGATAAATAATGCAAACTGGAAATGCTTTTTCCAAAGGTCGTGGTCCCGCTTAGACCTAAACAGTCCAGAGGAGCAGGACGACAATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ],
+                                                                    'EF362754-E1' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF362754-E1',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1932,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1932,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAGGATTCCGAAGGTACCGACGGGACCGAGGAGGACGGGTGCCGGGCAGGGGGGTGGTTTCATGTGGAGGCCATTATAACACACGGCCAGAGGCAGGTATCCAGTGACGAGGACGAGGACGAAACAGAGACAGGGGAGGATTTAGACTTTATAGACAATAGGGTTCCCGGAGATGGGCAGGAAATTCCCTTGCAGCTATATGCACAACAAACCGCTCAGGATGACGAAGCAACAGTGCAGGCCCTAAAACGAAAGTTTGTGGCCAGTCCTTTGTCTGCATGCTCATGCATAGAGAATGATTTAAGTCCCAGATTAGATGCAATCTCCCTAAACAGAAAGTCAGAAAAGGCGAAGAGGCGCTTATTCGAGACAGAACCACCAGACAGTGGGTATGGCAATACGCAGATGGTTGTTGGAACGCCAGAGGAGGTAACGGGGGATGAGGAAAGCCAAGGGGGGCGGCCGGTGGAGGATCAGGAGGAGGAGCGTCAAGGGGGAGACGGAGAGGCAGATCTAACTGTACACACTCCACAGTCAGGAACAGATGCGACGGGTAGCGTGCTGACCTTACTAAGAAGTAGCAATCTGAAGGCGACGTTGCTGAGTAAGTTTAAGGACCTGTTTGGGGTGGGATTCTATGAACTGGTCAGACAGTTCAAAAGCAGCAAGACAGCATGTGCAGACTGGGTCGTCTGCGCCTATGGTGTGTATTATGCTGTAGCGGAGGGTCTAAAGAAATTAATACAGCCACATACACAATATGCACATATACAGGTACAGACCAGCTCGTGGGGCATGGTGGTCTTTATGCTGCTGCGATACAACTGTGCAAAAAACAGGGACTCAGTGTCCAAGAACATGAGCATGCTGTTAAACATTCCCGAAAAGCATATGCTCATAGAACCACCAAAACTGAGAAGTACCCCTGCCGCCTTATACTGGTACAAGACGGCCATGGGCAACGGAAGTGAGGTATATGGGGAAACACCAGAATGGATTGTTAGACAGACGTTGGTAGGACATAGCATGGAAGACGAACAGTTCAGACTGTCAGTTATGGTACAGTATGCATATGACCATGACATTGTAGAGGAAAGTGTGCTTGCATTTGAGTATGCACAGCTAGCAGATGTGGATGCCAATGCAGCAGCATTTCTAAACAGCAACTGTCAGGCCAAGTACGTGAAGGACGCAGTGACAATGTGCAGGCACTATAAGCGTGCAGAGAGAGAACAGATGAGTATGTCACAGTGGATAACATTCAGAGGAAATAAGGTATCAGAGGAAGGGGACTGGAAGCCCATAGTCAGGTTTCTAAGACATCAAGGGGTAGAGTTTGTGTCGTTCCTAGCTGCCTTTAAATTGTTCCTAAAAGGCGTGCCAAAGAAAAATTGTATAGTGTTCTATGGACCTGCAGACACAGGCAAATCATATTTTTGCATGAGCTTGTTGCAGTTCCTAGGCGGCGCTGTTATCTCATATGCTAATTCTAGCAGCCATTTTTGGCTTCAACCTTTATCAGATAGTAAGATAGGGTTACTGGACGACGCAACACCCCAGTGTTGGAGTTACATAGATATATATTTAAGAAATCTTTTGGATGGACACCCAGTGAGCATAGACAGAAAGCACAAAACTTTGCTGCAGCTGAAGTGTCCACCCCTAATGATAACAACCAACACCAATCCTCTAGAGGAGGACAGATGGAAATATTTGCGCAGCAGGCTGACAGTGTTTACATTTAAGAATCCATTTCCTTTTGCAAGTCCGGGAGAGCCCCTGTACCCGATAAATAATGCAAACTGGAAATGCTTTTTCCAAAGGTCGTGGTCCCGCTTAGACCTAAACAGTCCAGAGGAGCAGGACGACAATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ],
+                                                                    'EF117891-E1' => [
+                                                                                       bless( {
+                                                                                                'display_id' => 'EF117891-E1',
+                                                                                                '_mapping' => [
+                                                                                                                1,
+                                                                                                                1
+                                                                                                              ],
+                                                                                                '_nowarnonempty' => undef,
+                                                                                                'end' => 1932,
+                                                                                                'alphabet' => 'dna',
+                                                                                                'length' => 1932,
+                                                                                                '_root_verbose' => 0,
+                                                                                                'seq' => 'ATGGAGGATTCCGAAGGTACCGACGGGACCGAGGAGGACGGGTGCCGGGCAGGGGGGTGGTTTCATGTGGAGGCCATTATAACACACGGCCAGAGGCAGGTATCCAGTGACGAGGACGAGGACGAAACAGAGACAGGGGAGGATTTAGACTTTATAGACAATAGGGTTCCCGGAGATGGGCAGGAAATTCCCTTGCAGCTATATGCACAACAAACCGCTCAGGATGACGAAGCAACAGTGCAGGCCCTAAAACGAAAGTTTGTGGCCAGTCCTTTGTCTGCATGCTCATGCATAGAGAATGATTTAAGTCCCAGATTAGATGCAATCTCCCTAAACAGAAAGTCAGAAAAGGCGAAGAGGCGCTTATTCGAGACAGAACCACCAGACAGTGGGTATGGCAATACGCAGATGGTTGTTGGAACGCCAGAGGAGGTAACGGGGGATGAGGAAAGCCAAGGGGGGCGGCCGGTGGAGGATCAGGAGGAGGAGCGTCAAGGGGGAGACGGAGAGGCAGATCTAACTGTACACACTCCACAGTCAGGAACAGATGCGACGGGTAGCGTGCTGACCTTACTAAGAAGTAGCAATCTGAAGGCGACGTTGCTGAGTAAGTTTAAGGACCTGTTTGGGGTGGGATTCTATGAACTGGTCAGACAGTTCAAAAGCAGCAAGACAGCATGTGCAGACTGGGTCGTCTGCGCCTATGGTGTGTATTATGCTGTAGCGGAGGGTCTAAAGAAATTAATACAGCCACATACACAATATGCACATATACAGGTACAGACCAGCTCGTGGGGCATGGTGGTCTTTATGCTGCTGCGATACAACTGTGCAAAAAACAGGGACTCAGTGTCCAAGAACATGAGCATGCTGTTAAACATTCCCGAAAAGCATATGCTCATAGAACCACCAAAACTGAGAAGTACCCCTGCCGCCTTATACTGGTACAAGACGGCCATGGGCAACGGAAGTGAGGTATATGGGGAAACACCAGAATGGATTGTTAGACAGACGTTGGTAGGACATAGCATGGAAGACGAACAGTTCAGACTGTCAGTTATGGTACAGTATGCATATGACCATGACATTGTAGAGGAAAGTGTGCTTGCATTTGAGTATGCACAGCTAGCAGATGTGGATGCCAATGCAGCAGCATTTCTAAACAGCAACTGTCAGGCCAAGTACGTGAAGGACGCAGTGACAATGTGCAGGCACTATAAGCGTGCAGAGAGAGAACAGATGAGTATGTCACAGTGGATAACATTCAGAGGAAATAAGGTATCAGAGGAAGGGGACTGGAAGCCCATAGTCAGGTTTCTAAGACATCAAGGGGTAGAGTTTGTGTCGTTCCTAGCTGCCTTTAAATTGTTCCTAAAAGGCGTGCCAAAGAAAAATTGTATAGTGTTCTATGGACCTGCAGACACAGGCAAATCATATTTTTGCATGAGCTTGTTGCAGTTCCTAGGCGGCGCTGTTATCTCATATGCTAATTCTAGCAGCCATTTTTGGCTTCAACCTTTATCAGATAGTAAGATAGGGTTACTGGACGACGCAACACCCCAGTGTTGGAGTTACATAGATATATATTTAAGAAATCTTTTGGATGGACACCCAGTGAGCATAGACAGAAAGCACAAAACTTTGCTGCAGCTGAAGTGTCCACCCCTAATGATAACAACCAACACCAATCCTCTAGAGGAGGACAGATGGAAATATTTGCGCAGCAGGCTGACAGTGTTTACATTTAAGAATCCATTTCCTTTTGCAAGTCCGGGAGAGCCCCTGTACCCGATAAATAATGCAAACTGGAAATGCTTTTTCCAAAGGTCGTGGTCCCGCTTAGACCTAAACAGTCCAGAGGAGCAGGACGACAATGGAAACACTGGCGAACCGTTTAGATGCGTGCCAGGAGACGTTGCTAGAACTGTATGA',
+                                                                                                'start' => 1
+                                                                                              }, 'Bio::LocatableSeq' )
+                                                                                     ]
+                                                                  },
+                                            '_dis_name' => {},
+                                            '_seq' => {
+                                                        'EF117891-E1/1-1932' => $VAR1->{'E1'}{'alignment'}{'_start_end_lists'}{'EF117891-E1'}[0],
+                                                        'EF362755-E1/1-1932' => $VAR1->{'E1'}{'alignment'}{'_start_end_lists'}{'EF362755-E1'}[0],
+                                                        'EF117890-E1/1-1932' => $VAR1->{'E1'}{'alignment'}{'_start_end_lists'}{'EF117890-E1'}[0],
+                                                        'EF362754-E1/1-1932' => $VAR1->{'E1'}{'alignment'}{'_start_end_lists'}{'EF362754-E1'}[0]
+                                                      },
+                                            '_root_verbose' => 0
+                                          }, 'Bio::SimpleAlign' )
+                  }
+        };

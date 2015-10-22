@@ -1,6 +1,6 @@
 package Alignment;
 
-BEGIN {use Cwd; my $document_root = getcwd . "/lib/aligners/clustalw/"; $ENV{CLUSTALDIR} = $document_root; print $document_root . "\n"; }
+BEGIN {use Config; use Cwd; my $document_root = getcwd . "/lib/aligners/clustalw/$Config{osname}"; $ENV{CLUSTALDIR} = $document_root;}
 
 use strict;
 use warnings;
@@ -9,7 +9,7 @@ use Bio::Tools::Run::Alignment::Clustalw;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Alignment);
-our @EXPORT = qw(clustalwPairwiseAlignmentVectors, clustalwMultipleAlignmentPerORF);
+our @EXPORT = qw(clustalwPairwiseAlignmentVectors clustalwMultipleAlignment organizeSequencesPerORF clustalwAlignmentAndTree);
 
 sub clustalwPairwiseAlignmentVectors{
 	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::scoreAlignmentVectors";
@@ -44,25 +44,38 @@ sub clustalwPairwiseAlignmentVectors{
 	return \%scoreAlignmentHash;
 }
 
-sub clustalwMultipleAlignmentPerORF{
-	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::multipleAlignmentPerORF";
-	my $factory = Bio::Tools::Run::Alignment::Clustalw->new(-matrix => $matrix, -ktuple => $ktuple);
-	my %sequences;
+sub organizeSequencesPerORF{
+	my ($sequencesHash) = @_ or die "Wrong prameter on Alignment::organizeSequencesPerORF";
+	my %sequences = ();
 	foreach my $sequence1 (keys $sequencesHash){
 		foreach my $orf (keys $sequencesHash->{$sequence1}){
 			my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'sequence'}[0];
-			$sequences{$orf} = ($sequences{$orf}) ? push ($sequences{$orf}, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf) : ();
+			my $tempArray = ($sequences{$orf}) ? $sequences{$orf} : [];
+			push ($tempArray, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf));
+			$sequences{$orf} = $tempArray;
 		}
 	}
-	
-	# Elimina el par key/value que este vacio
-	foreach my $sequence1 (keys(%scoreAlignmentHash)){
-		if ((scalar keys $scoreAlignmentHash{$sequence1}) == 0){
-			delete $scoreAlignmentHash{$sequence1};
-		}	
-	}
+	return \%sequences;
+}
 
-	return \%scoreAlignmentHash;
+sub clustalwMultipleAlignment{
+	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::multipleAlignmentPerORF";
+	my $factory = Bio::Tools::Run::Alignment::Clustalw->new(-matrix => $matrix, -ktuple => $ktuple);
+	foreach my $orf (keys $sequencesHash){
+		$factory->align($sequencesHash->{$orf});
+	}
+}
+
+sub clustalwAlignmentAndTree{
+	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::multipleAlignmentPerORF";
+	my $factory = Bio::Tools::Run::Alignment::Clustalw->new(-matrix => $matrix, -ktuple => $ktuple);
+	my %alignmentAndTree;
+	foreach my $orf (keys $sequencesHash){
+		my ($aln, $tree) = $factory->run($sequencesHash->{$orf});
+		$alignmentAndTree{$orf}{'alignment'} = $aln;
+		$alignmentAndTree{$orf}{'tree'} = $tree;
+	}
+	return \%alignmentAndTree;
 }
 
 1;
