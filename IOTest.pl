@@ -9,9 +9,10 @@ use Data::Dumper;
 
 
 my @orfs = ('E1','E2','L1','L2','E6', 'E7');
-$seqio_obj = IOSequence::readSequence('data/todos.gb');
-$orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene');
-tagStatisticsReport($orfCount, \@orfs);
+$seqio_obj = IOSequence::readSequence('data/sequence.gb');
+$orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene,product,note');
+print Dumper($orfCount);
+#tagStatisticsReport($orfCount, \@orfs);
 
 #$pairwiseAlignmentVector = Alignment::clustalwPairwiseAlignmentVectors($orfCount, 3, 'BLOSUM');
 #$multipleAlignmentVector = Alignment::clustalwMultipleAlignmentPerORF($orfCount, 3, 'BLOSUM');
@@ -20,15 +21,15 @@ tagStatisticsReport($orfCount, \@orfs);
 sub tagStatisticsReport(){
 	my ($tagCount, $tagsExpected) = @_ or die "Wrong parameters number in tagStatisticReport";
 	my $fila = "";
-	my $header = "\t";
+	my $header = ",";
 	my $i = 0;
 	foreach my $sequence (keys %$tagCount){
-		$fila .= $sequence . "\t";
+		$fila .= $sequence . ",";
 		foreach my $tag (@$tagsExpected){
-			$fila .= (exists($tagCount->{$sequence}->{$tag})) ? @{$tagCount->{$sequence}->{$tag}->{'sequence'}} : "0";
-			$fila .= "\t";
+			$fila .= (exists($tagCount->{$sequence}->{$tag}->{'dnaSequence'})) ? '1' : '0';
+			$fila .= ",";
 			if ($i == 1){
-				$header .= $tag . "\t";
+				$header .= $tag . ",";
 			}
 		}
 		$fila .= "\n";
