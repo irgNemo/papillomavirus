@@ -1,10 +1,10 @@
-package IOSequence;
+package SequenceIO;
 use strict;
 use warnings;
 use Exporter; 
 
 our @ISA = qw(Exporter);
-our @EXPORT_OK = qw(IOSequence);
+our @EXPORT_OK = qw(SequenceIO);
 our @EXPORT = qw(readSequence writeSequence);
 
 sub readSequence{
