@@ -6,6 +6,7 @@ use strict;
 use warnings;
 use Exporter;
 use Bio::Tools::Run::Alignment::Clustalw;
+use Bio::AlignIO;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Alignment);
@@ -21,8 +22,8 @@ sub clustalwPairwiseAlignmentVectors{
 			if (($sequence1 ne $sequence2) and !($test1)){
 				my @scoreAlignmentVector = ();
 				foreach my $orf (keys $sequencesHash->{$sequence1}){
-					my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'sequence'}[0];
-					my $seq2 = $sequencesHash->{$sequence2}->{$orf}->{'sequence'}[0];
+					my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'dnaSequence'};
+					my $seq2 = $sequencesHash->{$sequence2}->{$orf}->{'dnaSequence'};
 					my @sequences = (
 						Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf), 
 						Bio::PrimarySeq->new(-seq => $seq2, -id => $sequence2 . "-" . $orf)
@@ -44,26 +45,14 @@ sub clustalwPairwiseAlignmentVectors{
 	return \%scoreAlignmentHash;
 }
 
-sub organizeSequencesPerORF{
-	my ($sequencesHash) = @_ or die "Wrong prameter on Alignment::organizeSequencesPerORF";
-	my %sequences = ();
-	foreach my $sequence1 (keys $sequencesHash){
-		foreach my $orf (keys $sequencesHash->{$sequence1}){
-			my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'sequence'}[0];
-			my $tempArray = ($sequences{$orf}) ? $sequences{$orf} : [];
-			push ($tempArray, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf));
-			$sequences{$orf} = $tempArray;
-		}
-	}
-	return \%sequences;
-}
-
 sub clustalwMultipleAlignment{
 	my ($sequencesHash, $ktuple, $matrix) = @_ or die "Wrong prameter on Alignment::multipleAlignmentPerORF";
 	my $factory = Bio::Tools::Run::Alignment::Clustalw->new(-matrix => $matrix, -ktuple => $ktuple);
+	my $alignment;
 	foreach my $orf (keys $sequencesHash){
-		$factory->align($sequencesHash->{$orf});
+		$alignment = $factory->align($sequencesHash->{$orf});
 	}
+	return $alignment;
 }
 
 sub clustalwAlignmentAndTree{
@@ -76,6 +65,14 @@ sub clustalwAlignmentAndTree{
 		$alignmentAndTree{$orf}{'tree'} = $tree;
 	}
 	return \%alignmentAndTree;
+}
+
+sub writeAlignment{
+	my ($alignment,$filename) = @_ or die "Wrong parameters number in writeAlignment function";
+	my $out = Bio::AlignIO->new(-file => ">$filename");
+	while (my $aln = $alignment->next_aln){
+		$out->write_aln($aln);	
+	}
 }
 
 1;

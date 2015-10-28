@@ -6,7 +6,7 @@ use Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Transformer);
-our @EXPORT = qw(SeqIOToHash);
+our @EXPORT = qw(SeqIOToHash organizeSequencePerORF);
 
 sub SeqIOToHash{
 	my ($seqio_obj, $tagsToVerify, $primaryTag, $secondaryTags) = @_ or die "Wrong parameter number on Statistic::statisticPerTag function";
@@ -21,7 +21,10 @@ sub SeqIOToHash{
 						foreach my $tagToVerify (@$tagsToVerify){
 							my ($tagFounded) = (($tagValues[0] =~ m/\s+($tagToVerify)\s+/) || ($tagValues[0] =~ m/^($tagToVerify)$/) || ($tagValues[0] =~ m/\s+($tagToVerify)$/) || ($tagValues[0] =~ m/^($tagToVerify)\s+/));
 							if (defined($tagFounded)){
-								unless (exists $tagsFound{$tagToVerify}) {															$tagsFound{$tagToVerify}{'dnaSequence'} = $featureObj->seq->seq;
+								unless (exists $tagsFound{$tagToVerify}) {
+									$tagsFound{$tagToVerify}{'dnaSequence'} = $featureObj->seq->seq;
+									my @translationArray = $featureObj->get_tag_values('translation');
+									$tagsFound{$tagToVerify}{'aminoSequence'} = $translationArray[0]; 
 								}
 							}
 						}
@@ -32,6 +35,20 @@ sub SeqIOToHash{
 		$sequences{$seq->accession_number} = \%tagsFound;
 	}
 	return \%sequences;	
+}
+
+sub organizeSequencesPerORF{
+	my ($sequencesHash) = @_ or die "Wrong prameter on Alignment::organizeSequencesPerORF";
+	my %sequences = ();
+	foreach my $sequence1 (keys $sequencesHash){
+		foreach my $orf (keys $sequencesHash->{$sequence1}){
+			my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'dnaSequence'};
+			my $tempArray = ($sequences{$orf}) ? $sequences{$orf} : [];
+			push ($tempArray, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf));
+			$sequences{$orf} = $tempArray;
+		}
+	}
+	return \%sequences;
 }
 
 1;
