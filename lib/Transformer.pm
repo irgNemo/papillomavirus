@@ -44,7 +44,7 @@ sub organizeSequencesPerORF{
 		foreach my $orf (keys $sequencesHash->{$sequence1}){
 			my $seq1 = $sequencesHash->{$sequence1}->{$orf}->{'dnaSequence'};
 			my $tempArray = ($sequences{$orf}) ? $sequences{$orf} : [];
-			push ($tempArray, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . "-" . $orf));
+			push ($tempArray, Bio::PrimarySeq->new(-seq => $seq1, -id => $sequence1 . $orf));
 			$sequences{$orf} = $tempArray;
 		}
 	}

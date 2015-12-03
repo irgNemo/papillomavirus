@@ -3,10 +3,11 @@ use strict;
 use warnings;
 use Exporter;
 use LWP::Simple;
+use Data::Dumper;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Utils);
-our @EXPORT = qw(getNCBICompleteGenomebyID);
+our @EXPORT = qw(getNCBICompleteGenomebyID createRandomSets);
 
 
 sub getNCBICompleteGenomebyID {
