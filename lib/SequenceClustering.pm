@@ -37,7 +37,6 @@ sub createRandomSets{
 sub computeClusters{
 	my ($alignments, $sequences) = @_ or die "Wrong parameters number in reassignLabels";
 	my %clusters;
-	my $overallPercentageIdentity;
 	foreach my $sequence (@{$sequences}){
 		my $maxAlignment = 0; # Si vamos a utilizar score entonces hay que poner el valor menor (mas negativo) posible
 		my $newLabel;
@@ -48,23 +47,18 @@ sub computeClusters{
 			my $temp = [$sequence, $consensus];
 			my $alignment = (Alignment::clustalWAlignments({'pairwise' => [$sequence, $consensus]})->{'pairwise'});
 			my $alignmentPercentage = $alignment->percentage_identity; #average_percentage_identity(); # Verificar cual es el valor de identidad que deseamos utilizar
-			print "\n" . $sequence->id . " - " . $consensus->id . " $alignmentPercentage"  . "\n"; 
+			#print "\n" . $sequence->id . " - " . $consensus->id . " $alignmentPercentage"  . "\n"; 
 			if ($maxAlignment <= $alignmentPercentage){
 				$newLabel = $key;
 				$maxAlignment = $alignmentPercentage;
 				$sequenceToBeStored = $sequence;
 			}
-			$overallPercentageIdentity += $alignmentPercentage;
 		}
 		my $temp = (exists $clusters{$newLabel}) ? $clusters{$newLabel} : [];
 		push($temp, $sequenceToBeStored);
 		$clusters{$newLabel} = $temp;	
 	}
-	print scalar($#{@{$sequences}});
-	print "\n";
-	print scalar($#{keys $alignments});
-	$overallPercentageIdentity = $overallPercentageIdentity / ( (scalar($#{@{$sequences}})) * scalar($#{keys $alignments}) );
-	return (\%clusters, $overallPercentageIdentity);
+	return \%clusters;
 }
 
 1;
