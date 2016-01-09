@@ -26,7 +26,8 @@ sub createRandomSets{
 	my $labelSize = scalar @{$labels};
 	my %sets;
 	foreach my $element (@{$elements}){
-		my $label = $labels->[int(rand($labelSize))];
+		my $randomIndex = int(rand($labelSize));
+		my $label = $labels->[$randomIndex];
 		my $temp = (exists $sets{$label}) ? $sets{$label} : [];
 		push ($temp, $element);
 		$sets{$label} = $temp;
@@ -35,7 +36,7 @@ sub createRandomSets{
 }
 
 sub computeClusters{
-	my ($alignments, $sequences) = @_ or die "Wrong parameters number in reassignLabels";
+	my ($alignments, $sequences, @alignmentParams) = @_ or die "Wrong parameters number in reassignLabels";
 	my %clusters;
 	foreach my $sequence (@{$sequences}){
 		my $maxAlignment = 0; # Si vamos a utilizar score entonces hay que poner el valor menor (mas negativo) posible
@@ -43,9 +44,9 @@ sub computeClusters{
 		my $sequenceToBeStored;
 		foreach my $key (keys $alignments){
 			# TODO Eliminar los objetos creados explicitamente
-			my $consensus = Bio::PrimarySeq->new(-seq => $alignments->{$key}->consensus_iupac(), -id => $alignments->{$key}->id()); # Ver si puedo obtener un objeto secuencia del alineamiento
+			my $consensus = Bio::PrimarySeq->new(-seq => $alignments->{$key}->consensus_string(60), -id => $alignments->{$key}->id()); # Ver si puedo obtener un objeto secuencia del alineamiento
 			my $temp = [$sequence, $consensus];
-			my $alignment = (Alignment::clustalWAlignments({'pairwise' => [$sequence, $consensus]})->{'pairwise'});
+			my $alignment = (Alignment::clustalWAlignments({'pairwise' => [$sequence, $consensus]}, @alignmentParams)->{'pairwise'});
 			my $alignmentPercentage = $alignment->percentage_identity; #average_percentage_identity(); # Verificar cual es el valor de identidad que deseamos utilizar
 			#print "\n" . $sequence->id . " - " . $consensus->id . " $alignmentPercentage"  . "\n"; 
 			if ($maxAlignment <= $alignmentPercentage){

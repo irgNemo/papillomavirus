@@ -12,28 +12,59 @@ use AlignmentIO;
 use Data::Dumper;
 use Utils;
 use SequenceClustering;
+use DateTime;
 
-my @labels = ("one", "two", "tree");
+my @labels = ("one", "two", "three");
 my @orfs = ('E1');#,'E2','L1','L2','E6', 'E7');
 my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk');
 my $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene,product,note');
 my $sequencesPerORF = Transformer::organizeSequencesPerORF($orfCount);
-
+my $limit = 10;
+my $start = DateTime->now();
+my $oldClusters;
+my $newClusters;
 foreach my $key (keys $sequencesPerORF){
+	print "\n-------------------- Llave $key ---------------\n";
+	my $iteration = 0;
 	my $seqsArrays = $sequencesPerORF->{$key};
-	my $oldClusters = createRandomSets($seqsArrays, \@labels);
-	my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg');
+	$oldClusters = createRandomSets($seqsArrays, \@labels);
+	my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg', 'quiet' => '1');
 	my $alignments = Alignment::clustalWAlignments($oldClusters, @alignmentParams);
-	my $newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays); 
-	while(!areEqualSets($oldClusters, $newClusters)){
+	print "\n-------- Iteracion $iteration ------------\n";
+	$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays, @alignmentParams); 
+	print "\n --------- Old Clusters ------------\n";
+	imprimirClusters($oldClusters);
+	print "\n ---------- New Clusters --------\n";
+	imprimirClusters($newClusters);
+	print "\n-------- Iteracion $iteration ------------\n";
+	$iteration++;
+	while(!areEqualSets($oldClusters, $newClusters) && $iteration < $limit){
 		$oldClusters = $newClusters;
 		$alignments = Alignment::clustalWAlignments($oldClusters, @alignmentParams);
-		$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays); 
-		print "\n-- Old Cluster ---\n" . Dumper($oldClusters) . "\n-----\n";
-		print "\n--- Clustered ------\n" . Dumper($newClusters) . "\n-------\n";
+		print "-------- Iteracion $iteration ------------\n";
+		$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays, @alignmentParams); 
+		print "\n --------- Old Clusters ------------\n";
+		imprimirClusters($oldClusters);
+		print "\n ---------- New Clusters --------\n";
+		imprimirClusters($newClusters);
+		print "-------- Iteracion $iteration ------------\n";
+		$iteration++;
 	}
+}
+my $end = DateTime->now();
+my $elapse = $end - $start;
+print "------------ Elapsed time : " . $elapse->in_units('minutes') . " min --------------\n";
 
-	#print "\n --------EqualSets-------\n" . areEqualSets($randomClusters, $newClusters) . "\n----------\n";
+
+sub imprimirClusters{
+	my ($clusters) = @_ or die "Dead";
+	for my $key (keys $clusters){
+		my $sequences = $clusters->{$key};
+		print "----- Cluster $key -----\n";
+		for my $sequence (@{$sequences}){
+			print $sequence->display_id . "\n";
+		}
+	}
 }
 
 sub areEqualSets{ # TODO Utilizar una algoritmo de busqueda mas eficiente
@@ -42,12 +73,12 @@ sub areEqualSets{ # TODO Utilizar una algoritmo de busqueda mas eficiente
 	foreach my $key (keys $first){
 		my $firstArray = $first->{$key};
 		my $secondArray	= $second->{$key};
-		print "\n------------- $key ------------\n";
+		#print "\n------------- $key ------------\n";
 		foreach my $firstSequence (@{$firstArray}){
 		$isFound = 0;
 			foreach my $secondSequence (@{$secondArray}){
 				$isFound = $isFound || ($firstSequence->display_id eq $secondSequence->display_id) ? 1 : 0;
-				print $firstSequence->display_id . " - " . $secondSequence->display_id . " - " . $isFound . "\n"; 
+		#		print $firstSequence->display_id . " - " . $secondSequence->display_id . " - " . $isFound . "\n"; 
 			}
 			if (!$isFound){
 				return 0;		
