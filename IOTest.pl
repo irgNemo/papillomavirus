@@ -31,7 +31,7 @@ foreach my $key (keys $sequencesPerORF){
 	my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg', 'quiet' => '1');
 	my $alignments = Alignment::clustalWAlignments($oldClusters, @alignmentParams);
 	print "\n-------- Iteracion $iteration ------------\n";
-	$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays, @alignmentParams); 
+	$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays, @alignmentParams);
 	print "\n --------- Old Clusters ------------\n";
 	imprimirClusters($oldClusters);
 	print "\n ---------- New Clusters --------\n";

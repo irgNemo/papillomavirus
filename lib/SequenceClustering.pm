@@ -45,11 +45,11 @@ sub computeClusters{
 		foreach my $key (keys $alignments){
 			# TODO Eliminar los objetos creados explicitamente
 			my $consensus = Bio::PrimarySeq->new(-seq => $alignments->{$key}->consensus_string(60), -id => $alignments->{$key}->id()); # Ver si puedo obtener un objeto secuencia del alineamiento
-			my $temp = [$sequence, $consensus];
+			#my $temp = [$sequence, $consensus];
 			my $alignment = (Alignment::clustalWAlignments({'pairwise' => [$sequence, $consensus]}, @alignmentParams)->{'pairwise'});
 			my $alignmentPercentage = $alignment->percentage_identity; #average_percentage_identity(); # Verificar cual es el valor de identidad que deseamos utilizar
 			#print "\n" . $sequence->id . " - " . $consensus->id . " $alignmentPercentage"  . "\n"; 
-			if ($maxAlignment <= $alignmentPercentage){
+			if ($maxAlignment <= $alignmentPercentage or !defined $maxAlignment){
 				$newLabel = $key;
 				$maxAlignment = $alignmentPercentage;
 				$sequenceToBeStored = $sequence;
