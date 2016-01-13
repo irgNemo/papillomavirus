@@ -40,7 +40,7 @@ while($clustersRuns < $maxClustersRuns){
 my $end = DateTime->now();
 my $elapse = $end - $start;
 print "------------------Cluster Final -------------------";
-imprimitClusters($finalClustersAndAlignment->{"clusters"});
+imprimirClusters($finalClustersAndAlignment->{"clusters"});
 print "\n------------ Elapsed time : " . $elapse->in_units('minutes') . " min --------------\n";
 
 sub averageScoreAlignmentPerCluster{
