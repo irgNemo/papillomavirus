@@ -20,21 +20,22 @@ my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk');
 my $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene,product,note');
 my $sequencesPerORF = Transformer::organizeSequencesPerORF($orfCount);
 my $stopCondition = 10;
-my $maxClustersRuns = 1;
-my $clustersRuns = 0;
 my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg', 'quiet' => '1');
-my $start = DateTime->now();
 my $clustersAndAlignments = undef;
-my $maxCluster = 0;
+my $maxClusteringIterations = 1; # Numero de iteraciones clustering
+my $currentClusteringIteration = 0; # Numero de la actual iteracion
 my $finalClusterAndAlignment = undef;
-while($clustersRuns < $maxClustersRuns){
+my $maxAverageScore = 0;
+my $start = DateTime->now();
+
+while($currentClusteringIteration < $maxClusteringIterations){
 	$clustersAndAlignments = sequenceClustering($sequencesPerORF, \@alignmentParams, $stopCondition);
 	my $averageScoreAlignment = averageScoreAlignmentPerCluster($clustersAndAlignments->{"alignments"});
-	if ($maxClusters < $averageScoreAlignment) {
-		$maxClusters = $averageScoreAlignment;
+	if ($maxAverageScore < $averageScoreAlignment) {
+		$maxAverageScore = $averageScoreAlignment;
 		$finalClusterAndAlignment = $clustersAndAlignments; 
 	}
-	$clustersRuns++;
+	$maxClusteringIteration++;
 }
 
 my $end = DateTime->now();
