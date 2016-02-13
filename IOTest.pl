@@ -19,7 +19,7 @@ my @orfs = ('E1');#,'E2','L1','L2','E6', 'E7');
 my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk');
 my $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene,product,note');
 my $sequencesPerORF = Transformer::organizeSequencesPerORF($orfCount);
-my $stopCondition = 3;
+my $stopCondition = 2;
 my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg', 'quiet' => '1');
 my $clustersAndAlignments = undef;
 my $maxClusteringIterations = 1; # Numero de iteraciones clustering
