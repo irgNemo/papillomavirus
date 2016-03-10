@@ -6,7 +6,18 @@ use Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(Transformer);
-our @EXPORT = qw(SeqIOToHash organizeSequencePerORF);
+our @EXPORT = qw(SeqIOToHashFasta SeqIOToHash organizeSequencePerORF);
+
+sub SeqIOToHashFasta{
+	my ($seqio_obj) = @_ or die "Wrong parameter number on Transformer::SeqIOToHashFasta function";
+	my %sequences;
+	while(my $seq = $seqio_obj->next_seq()){
+		my $tempArray = ($sequences{'E1'}) ? $sequences{'E1'} : [];
+		push ($tempArray, $seq->primary_seq);
+		$sequences{'E1'} = $tempArray;
+	}
+	return \%sequences;
+}
 
 sub SeqIOToHash{
 	my ($seqio_obj, $tagsToVerify, $primaryTag, $secondaryTags) = @_ or die "Wrong parameter number on Statistic::statisticPerTag function";
