@@ -23,14 +23,26 @@ our @EXPORT = qw(createRandomSets computeCluster);
 
 sub createRandomSets{
 	my ($elements, $labels) = @_ or die "Wrong parameters number in createRandomSets";
-	my $labelSize = scalar @{$labels};
 	my %sets;
-	foreach my $element (@{$elements}){
-		my $randomIndex = int(rand($labelSize));
-		my $label = $labels->[$randomIndex];
-		my $temp = (exists $sets{$label}) ? $sets{$label} : [];
-		push ($temp, $element);
-		$sets{$label} = $temp;
+	my $minSequencesPerCluster = 2;
+
+	# Completamos los clusters, aleatoreamente, con el resto de los elementos.
+	while (1){	
+		foreach my $element (@{$elements}){
+			my $randomIndex = int(rand(@{$labels}));
+			my $label = $labels->[$randomIndex];
+			my $temp = (exists $sets{$label}) ? $sets{$label} : [];
+			push ($temp, $element);
+			$sets{$label} = $temp;
+		}
+		
+		my $biggerThanTwo = 1;
+		foreach my $key (keys %sets){
+			my $size =  @{$sets{$key}};
+			$biggerThanTwo &&= ($size >= $minSequencesPerCluster) ? 1 : 0;
+		}
+		if ($biggerThanTwo) { last; }
+		%sets = ();
 	}
 	return \%sets;
 }

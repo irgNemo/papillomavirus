@@ -14,37 +14,40 @@ use Utils;
 use SequenceClustering;
 use DateTime;
 
-my @labels = ("one", "two");
+my @labels = ("one", "two", "tree", "four", "five");
 my @orfs = ('E1');#,'E2','L1','L2','E6', 'E7');
-my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk');
+my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk'); # Este lee archivos gb
+#my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk');
 my $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene,product,note');
 my $sequencesPerORF = Transformer::organizeSequencesPerORF($orfCount);
-my $stopCondition = 2;
+my $stopCondition = 10;
 my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg', 'quiet' => '1');
 my $clustersAndAlignments = undef;
-my $maxClusteringIterations = 1; # Numero de iteraciones clustering
-my $currentClusteringIteration = 0; # Numero de la actual iteracion
+my $maxClusteringIterations = 10; # Numero de iteraciones clustering
+my $currentClusteringIteration = 0; # Actual iteracion
 my $finalClusterAndAlignment = undef;
 my $maxAverageScore = 0;
-my $start = DateTime->now();
 
+
+my $start = DateTime->now();
 while($currentClusteringIteration < $maxClusteringIterations){
-	print "----------------- SequenceClustering --------------------";
+	print "\n----------- Current Ieration $currentClusteringIteration ------------\n";
+	print "\n----------------- SequenceClustering --------------------\n";
 	$clustersAndAlignments = sequenceClustering($sequencesPerORF, \@alignmentParams, $stopCondition);
-	print "----------------- Average Score --------------------";
 	my $averageScoreAlignment = averageScoreAlignmentPerCluster($clustersAndAlignments->{"alignments"});
 	if ($maxAverageScore < $averageScoreAlignment) {
 		$maxAverageScore = $averageScoreAlignment;
 		$finalClusterAndAlignment = $clustersAndAlignments; 
 	}
+	print "\n----------------- Average Score $averageScoreAlignment --------------------\n";
 	$currentClusteringIteration++;
-	print "----------- Current Ieration $currentClusteringIteration ------------";
 }
 
 my $end = DateTime->now();
 my $elapse = $end - $start;
-print "------------------Cluster Final -------------------";
-imprimirClusters($finalClustersAndAlignment->{"clusters"});
+print "\n------------------Cluster Final -------------------\n";
+imprimirClusters($finalClusterAndAlignment->{"clusters"});
+print "\n--------- Average Score:  averageScoreAlignmentPerCluster($finalClusterAndAlignment->{'alignments'}) -------\n";
 print "\n------------ Elapsed time : " . $elapse->in_units('minutes') . " min --------------\n";
 
 sub averageScoreAlignmentPerCluster{
@@ -68,30 +71,52 @@ sub sequenceClustering{
 		print "\n-------------------- Llave $key ---------------\n";
 		my $iteration = 0;
 		my $seqsArrays = $sequencesPerORF->{$key};
-		$oldClusters = createRandomSets($seqsArrays, \@labels);
+		$oldClusters = SequenceClustering::createRandomSets($seqsArrays, \@labels);
 		$alignments = Alignment::clustalWAlignments($oldClusters, @alignmentParams);
-		print "\n-------- Iteracion $iteration ------------\n";
+		print "\n-------- Inicio Iteracion $iteration ------------\n";
 		$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays, @alignmentParams);
+		$newClusters = validateSizeClusters($newClusters, 2); # Verificar que los nuevos Clusters tenga al menos dos secuencias por cada uno, si no, asignarlo de manera aleatoria a alguno
 		print "\n --------- Old Clusters ------------\n";
 		imprimirClusters($oldClusters);
 		print "\n ---------- New Clusters --------\n";
 		imprimirClusters($newClusters);
-		print "\n-------- Iteracion $iteration ------------\n";
+		print "\n-------- Fin Iteracion $iteration ------------\n";
 		$iteration++;
 		while(!areEqualSets($oldClusters, $newClusters) && $iteration < $stopCondition){
 			$oldClusters = $newClusters;
 			$alignments = Alignment::clustalWAlignments($oldClusters, @alignmentParams);
-			print "-------- Iteracion $iteration ------------\n";
+			print "\n-------- Inicio Iteracion $iteration ------------\n";
 			$newClusters = SequenceClustering::computeClusters($alignments, $seqsArrays, @alignmentParams); 
+			$newClusters = validateSizeClusters($newClusters, 2); # Verificar que los nuevos Clusters tenga al menos dos secuencias por cada uno, si no, asignarlo de manera aleatoria a alguno
 			print "\n --------- Old Clusters ------------\n";
 			imprimirClusters($oldClusters);
 			print "\n ---------- New Clusters --------\n";
 			imprimirClusters($newClusters);
-			print "-------- Iteracion $iteration ------------\n";
+			print "\n-------- Fin Iteracion $iteration ------------\n";
 			$iteration++;
 		}
 	}
 	return {"alignments" => $alignments, "clusters" => $newClusters};
+}
+
+sub validateSizeClusters{
+	my ($clusters, $minNumOfElements) = @_ or die "Wrong number of parameters in validateSizeClusters function";
+	my @labels = keys $clusters;
+	foreach $label (@labels){
+		my $size = @{$clusters->{$label}};
+		if ($size < $minNumOfElements){
+			my $randomLabel = $labels[int(rand(@labels))];
+			while ($label eq $randomLabel) { $randomLabel = $labels[int(rand(@labels))];}
+			print "\nnew cluster From $label To  $randomLabel\n";
+			foreach my $element (@{$clusters->{$label}}){
+				my @temp = @{$clusters->{$randomLabel}};
+				push (@temp, $element);
+				$clusters->{$randomLabel} = \@temp;
+			}
+			delete $clusters->{$label};
+		}
+	}
+	return $clusters;
 }
 
 sub imprimirClusters{
