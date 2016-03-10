@@ -47,7 +47,7 @@ my $end = DateTime->now();
 my $elapse = $end - $start;
 print "\n------------------Cluster Final -------------------\n";
 imprimirClusters($finalClusterAndAlignment->{"clusters"});
-print "\n--------- Average Score:  averageScoreAlignmentPerCluster($finalClusterAndAlignment->{'alignments'}) -------\n";
+print "\n--------- Average Score:" .  averageScoreAlignmentPerCluster($finalClusterAndAlignment->{"alignments"}) . "-------\n";
 print "\n------------ Elapsed time : " . $elapse->in_units('minutes') . " min --------------\n";
 
 sub averageScoreAlignmentPerCluster{
