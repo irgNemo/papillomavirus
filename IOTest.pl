@@ -14,21 +14,21 @@ use Utils;
 use SequenceClustering;
 use DateTime;
 
-my @labels = ("one", "two", "tree", "four", "five");
-# --------- GenBank --------------
-my @orfs = ('E1');#,'E2','L1','L2','E6', 'E7');
+my @labels = ("one", "two", "tree");
+# --------- Inicio GenBank --------------
+#my @orfs = ('E1');#,'E2','L1','L2','E6', 'E7');
 #my $seqio_obj = SequenceIO::readSequence('data/sequence.gbk'); # Este lee archivos gb
 #my $orfCount = Transformer::SeqIOToHash($seqio_obj, \@orfs, 'CDS', 'gene,product,note');
 #my $seqHash = Transformer::organizeSequencesPerORF($orfCount);
 # --------- Fin GenBank ---------
-# --------- Fasta ---------------
-my $seqio_obj = SequenceIO::readSequence("data/secuencia1-percentage1.fasta");
+# --------- Inicio Fasta ---------------
+my $seqio_obj = SequenceIO::readSequence("data/secuenciasTodosCambiosTodosPorcentajes.fasta");
 my $seqHash = SeqIOToHashFasta($seqio_obj);
 # --------- Fin Fasta ---------------
 my $stopCondition = 10;
 my @alignmentParams = ('ktuple' => 3, 'matrix' => 'BLOSUM', 'output' => 'gcg', 'quiet' => '1');
 my $clustersAndAlignments = undef;
-my $maxClusteringIterations = 3; # Numero de iteraciones clustering
+my $maxClusteringIterations = 5; # Numero de iteraciones clustering
 my $currentClusteringIteration = 0; # Actual iteracion
 my $finalClusterAndAlignment = undef;
 my $maxAverageScore = 0;

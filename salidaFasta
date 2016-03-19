@@ -1,0 +1,658 @@
+
+----------- Current Ieration 0 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+----- Cluster tree -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+----- Cluster five -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+----- Cluster four -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 1 ------------
+
+----------------- Average Score 98.6842818869112 --------------------
+
+----------- Current Ieration 1 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+----- Cluster one -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+----- Cluster five -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 2 ------------
+
+----------------- Average Score 98.9281521105169 --------------------
+
+----------- Current Ieration 2 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+----- Cluster five -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+----- Cluster tree -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+----- Cluster four -----
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+
+ ---------- New Clusters --------
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+ ---------- New Clusters --------
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+-------- Fin Iteracion 2 ------------
+
+----------------- Average Score 98.6842818869112 --------------------
+
+------------------Cluster Final -------------------
+----- Cluster two -----
+sequenceBase|1|percentage|1|type|id|sequenceModified|3
+sequenceBase|1|percentage|1|type|id|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|3
+----- Cluster four -----
+sequenceBase|1|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|1
+sequenceBase|1|percentage|1|type|dr|sequenceModified|2
+sequenceBase|1|percentage|1|type|dr|sequenceModified|3
+sequenceBase|1|percentage|1|type|dr|sequenceModified|4
+sequenceBase|1|percentage|1|type|dr|sequenceModified|5
+sequenceBase|1|percentage|1|type|i|sequenceModified|1
+sequenceBase|1|percentage|1|type|i|sequenceModified|2
+sequenceBase|1|percentage|1|type|i|sequenceModified|3
+sequenceBase|1|percentage|1|type|i|sequenceModified|4
+sequenceBase|1|percentage|1|type|i|sequenceModified|5
+sequenceBase|1|percentage|1|type|id|sequenceModified|1
+sequenceBase|1|percentage|1|type|id|sequenceModified|2
+sequenceBase|1|percentage|1|type|id|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|1
+sequenceBase|1|percentage|1|type|idr|sequenceModified|2
+sequenceBase|1|percentage|1|type|idr|sequenceModified|3
+sequenceBase|1|percentage|1|type|idr|sequenceModified|4
+sequenceBase|1|percentage|1|type|idr|sequenceModified|5
+sequenceBase|1|percentage|1|type|ir|sequenceModified|1
+sequenceBase|1|percentage|1|type|ir|sequenceModified|2
+sequenceBase|1|percentage|1|type|ir|sequenceModified|3
+sequenceBase|1|percentage|1|type|ir|sequenceModified|4
+sequenceBase|1|percentage|1|type|ir|sequenceModified|5
+sequenceBase|1|percentage|1|type|r|sequenceModified|1
+sequenceBase|1|percentage|1|type|r|sequenceModified|2
+sequenceBase|1|percentage|1|type|r|sequenceModified|4
+sequenceBase|1|percentage|1|type|r|sequenceModified|5
+
+--------- Average Score:98.9281521105169-------
+
+------------ Elapsed time : 4 min --------------

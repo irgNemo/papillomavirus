@@ -1,0 +1,1721 @@
+
+----------- Current Ieration 0 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+U31788E1
+M62849E1
+----- Cluster five -----
+D21208E1
+FR872717E1
+DQ344807E1
+----- Cluster one -----
+U31791E1
+J04353E1
+D90400E1
+M12732E1
+AF436130E1
+HQ537751E1
+----- Cluster two -----
+GQ472847E1
+AF092932E1
+KC470260E1
+----- Cluster four -----
+AY262282E1
+NC_001526E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+----- Cluster five -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+KC470260E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+----- Cluster five -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+----- Cluster five -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+M62849E1
+KC470260E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+----- Cluster five -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+M62849E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+----- Cluster five -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+M62849E1
+KC470260E1
+
+-------- Fin Iteracion 2 ------------
+
+----------------- Average Score 76.3049246085102 --------------------
+
+----------- Current Ieration 1 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+new cluster From five To  one
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AY262282E1
+D90400E1
+----- Cluster tree -----
+D21208E1
+NC_001526E1
+FR872717E1
+DQ344807E1
+----- Cluster one -----
+U31791E1
+U31788E1
+M12732E1
+----- Cluster two -----
+J04353E1
+AF436130E1
+GQ472847E1
+KC470260E1
+----- Cluster four -----
+M62849E1
+HQ537751E1
+AF092932E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+AY262282E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+GQ472847E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+AY262282E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+GQ472847E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+U31791E1
+AY262282E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+U31791E1
+AY262282E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+-------- Fin Iteracion 2 ------------
+
+-------- Inicio Iteracion 3 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+J04353E1
+KC470260E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+
+-------- Fin Iteracion 3 ------------
+
+----------------- Average Score 73.3615071719226 --------------------
+
+----------- Current Ieration 2 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+AY262282E1
+AF436130E1
+GQ472847E1
+----- Cluster one -----
+D21208E1
+FR872717E1
+----- Cluster five -----
+U31791E1
+J04353E1
+M12732E1
+----- Cluster two -----
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31788E1
+D90400E1
+AF092932E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+----- Cluster tree -----
+AY262282E1
+GQ472847E1
+----- Cluster two -----
+D21208E1
+M62849E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+----- Cluster tree -----
+AY262282E1
+GQ472847E1
+----- Cluster two -----
+D21208E1
+M62849E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster tree -----
+AY262282E1
+GQ472847E1
+----- Cluster two -----
+D21208E1
+M62849E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+new cluster From tree To  four
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster tree -----
+AY262282E1
+GQ472847E1
+----- Cluster two -----
+D21208E1
+M62849E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+GQ472847E1
+
+-------- Fin Iteracion 2 ------------
+
+-------- Inicio Iteracion 3 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+GQ472847E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+-------- Fin Iteracion 3 ------------
+
+----------------- Average Score 74.8536230195626 --------------------
+
+----------- Current Ieration 3 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+new cluster From one To  five
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+M62849E1
+NC_001526E1
+----- Cluster one -----
+U31788E1
+D90400E1
+GQ472847E1
+----- Cluster five -----
+U31791E1
+D21208E1
+J04353E1
+M12732E1
+AF436130E1
+HQ537751E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+GQ472847E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+KC470260E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+GQ472847E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+KC470260E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+NC_001526E1
+HQ537751E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+KC470260E1
+
+-------- Fin Iteracion 2 ------------
+
+----------------- Average Score 76.8197655118542 --------------------
+
+----------- Current Ieration 4 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+D90400E1
+NC_001526E1
+----- Cluster five -----
+U31788E1
+J04353E1
+M12732E1
+KC470260E1
+----- Cluster tree -----
+AY262282E1
+AF436130E1
+GQ472847E1
+DQ344807E1
+----- Cluster two -----
+D21208E1
+AF092932E1
+FR872717E1
+----- Cluster four -----
+U31791E1
+M62849E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D90400E1
+NC_001526E1
+----- Cluster five -----
+J04353E1
+M12732E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+AY262282E1
+U31788E1
+AF436130E1
+GQ472847E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+M62849E1
+HQ537751E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+D90400E1
+NC_001526E1
+----- Cluster five -----
+J04353E1
+M12732E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+AY262282E1
+U31788E1
+AF436130E1
+GQ472847E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+M62849E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+AY262282E1
+J04353E1
+M12732E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M62849E1
+HQ537751E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AY262282E1
+J04353E1
+M12732E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M62849E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+AY262282E1
+J04353E1
+GQ472847E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+M62849E1
+HQ537751E1
+
+-------- Fin Iteracion 2 ------------
+
+-------- Inicio Iteracion 3 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AY262282E1
+J04353E1
+GQ472847E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+M62849E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+AY262282E1
+J04353E1
+GQ472847E1
+M62849E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+HQ537751E1
+
+-------- Fin Iteracion 3 ------------
+
+-------- Inicio Iteracion 4 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AY262282E1
+J04353E1
+GQ472847E1
+M62849E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+AY262282E1
+J04353E1
+GQ472847E1
+M62849E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+HQ537751E1
+
+-------- Fin Iteracion 4 ------------
+
+----------------- Average Score 81.2534095643069 --------------------
+
+----------- Current Ieration 5 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+new cluster From four To  five
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AF092932E1
+FR872717E1
+----- Cluster one -----
+AY262282E1
+J04353E1
+M62849E1
+----- Cluster tree -----
+U31791E1
+D21208E1
+D90400E1
+AF436130E1
+----- Cluster two -----
+U31788E1
+M12732E1
+GQ472847E1
+NC_001526E1
+DQ344807E1
+----- Cluster four -----
+HQ537751E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+AF092932E1
+FR872717E1
+HQ537751E1
+----- Cluster one -----
+AY262282E1
+J04353E1
+M62849E1
+KC470260E1
+----- Cluster two -----
+U31791E1
+D21208E1
+U31788E1
+D90400E1
+M12732E1
+AF436130E1
+GQ472847E1
+NC_001526E1
+DQ344807E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AF092932E1
+FR872717E1
+HQ537751E1
+----- Cluster one -----
+AY262282E1
+J04353E1
+M62849E1
+KC470260E1
+----- Cluster two -----
+U31791E1
+D21208E1
+U31788E1
+D90400E1
+M12732E1
+AF436130E1
+GQ472847E1
+NC_001526E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster five -----
+U31791E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+U31788E1
+AF436130E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster five -----
+U31791E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+U31788E1
+AF436130E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster one -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+
+-------- Fin Iteracion 2 ------------
+
+-------- Inicio Iteracion 3 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster one -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster one -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster two -----
+U31791E1
+U31788E1
+AF436130E1
+
+-------- Fin Iteracion 3 ------------
+
+----------------- Average Score 78.8721009443386 --------------------
+
+----------- Current Ieration 6 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+whilewhilewhile
+new cluster From two To  one
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+GQ472847E1
+NC_001526E1
+----- Cluster tree -----
+M12732E1
+KC470260E1
+----- Cluster one -----
+D21208E1
+J04353E1
+M62849E1
+----- Cluster two -----
+AY262282E1
+HQ537751E1
+----- Cluster four -----
+U31791E1
+U31788E1
+D90400E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+AY262282E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+AY262282E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster one -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+U31791E1
+U31788E1
+AF436130E1
+GQ472847E1
+AF092932E1
+FR872717E1
+DQ344807E1
+
+-------- Fin Iteracion 1 ------------
+
+----------------- Average Score 74.8412219387609 --------------------
+
+----------- Current Ieration 7 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+M12732E1
+DQ344807E1
+----- Cluster tree -----
+D90400E1
+AF436130E1
+M62849E1
+----- Cluster one -----
+U31791E1
+U31788E1
+NC_001526E1
+AF092932E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+J04353E1
+HQ537751E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster tree -----
+D90400E1
+M62849E1
+NC_001526E1
+KC470260E1
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+----- Cluster four -----
+D21208E1
+J04353E1
+M12732E1
+HQ537751E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+new cluster From two To  four
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+D90400E1
+M62849E1
+NC_001526E1
+KC470260E1
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster two -----
+AY262282E1
+GQ472847E1
+----- Cluster four -----
+D21208E1
+J04353E1
+M12732E1
+HQ537751E1
+
+ ---------- New Clusters --------
+----- Cluster tree -----
+M62849E1
+KC470260E1
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+GQ472847E1
+NC_001526E1
+HQ537751E1
+AY262282E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+M62849E1
+KC470260E1
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+GQ472847E1
+NC_001526E1
+HQ537751E1
+AY262282E1
+
+ ---------- New Clusters --------
+----- Cluster tree -----
+M62849E1
+KC470260E1
+----- Cluster one -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+GQ472847E1
+NC_001526E1
+HQ537751E1
+
+-------- Fin Iteracion 2 ------------
+
+----------------- Average Score 76.0420677731504 --------------------
+
+----------- Current Ieration 8 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+
+new cluster From two To  five
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+J04353E1
+M12732E1
+AF436130E1
+DQ344807E1
+----- Cluster five -----
+D21208E1
+M62849E1
+AF092932E1
+FR872717E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+D90400E1
+----- Cluster two -----
+HQ537751E1
+KC470260E1
+----- Cluster four -----
+AY262282E1
+GQ472847E1
+NC_001526E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+AF092932E1
+FR872717E1
+HQ537751E1
+----- Cluster one -----
+J04353E1
+M12732E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+GQ472847E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+AF092932E1
+FR872717E1
+HQ537751E1
+----- Cluster one -----
+J04353E1
+M12732E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+GQ472847E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+----- Cluster one -----
+J04353E1
+M12732E1
+HQ537751E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+-------- Fin Iteracion 1 ------------
+
+-------- Inicio Iteracion 2 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+----- Cluster one -----
+J04353E1
+M12732E1
+HQ537751E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+D90400E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+HQ537751E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+-------- Fin Iteracion 2 ------------
+
+-------- Inicio Iteracion 3 ------------
+
+ --------- Old Clusters ------------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+HQ537751E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster five -----
+GQ472847E1
+AF092932E1
+FR872717E1
+----- Cluster one -----
+D21208E1
+J04353E1
+D90400E1
+M12732E1
+HQ537751E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster four -----
+AY262282E1
+M62849E1
+NC_001526E1
+KC470260E1
+
+-------- Fin Iteracion 3 ------------
+
+----------------- Average Score 77.7240315061338 --------------------
+
+----------- Current Ieration 9 ------------
+
+----------------- SequenceClustering --------------------
+
+-------------------- Llave E1 ---------------
+
+-------- Inicio Iteracion 0 ------------
+while
+new cluster From one To  four
+
+ --------- Old Clusters ------------
+----- Cluster one -----
+AF436130E1
+M62849E1
+FR872717E1
+KC470260E1
+----- Cluster five -----
+AY262282E1
+U31788E1
+----- Cluster tree -----
+U31791E1
+D21208E1
+AF092932E1
+----- Cluster two -----
+GQ472847E1
+NC_001526E1
+----- Cluster four -----
+J04353E1
+D90400E1
+M12732E1
+HQ537751E1
+DQ344807E1
+
+ ---------- New Clusters --------
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+GQ472847E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+
+-------- Fin Iteracion 0 ------------
+
+-------- Inicio Iteracion 1 ------------
+
+ --------- Old Clusters ------------
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+GQ472847E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+
+ ---------- New Clusters --------
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+AF092932E1
+FR872717E1
+DQ344807E1
+----- Cluster four -----
+D21208E1
+AY262282E1
+J04353E1
+D90400E1
+M12732E1
+GQ472847E1
+M62849E1
+NC_001526E1
+HQ537751E1
+KC470260E1
+
+-------- Fin Iteracion 1 ------------
+
+----------------- Average Score 76.5181583946923 --------------------
+
+------------------Cluster Final -------------------
+----- Cluster five -----
+AY262282E1
+J04353E1
+GQ472847E1
+M62849E1
+NC_001526E1
+KC470260E1
+----- Cluster tree -----
+U31791E1
+U31788E1
+AF436130E1
+DQ344807E1
+----- Cluster two -----
+AF092932E1
+FR872717E1
+----- Cluster four -----
+D21208E1
+D90400E1
+M12732E1
+HQ537751E1
+
+--------- Average Score:  averageScoreAlignmentPerCluster(HASH(0x1f036d8)) -------
+
+------------ Elapsed time : 23 min --------------
